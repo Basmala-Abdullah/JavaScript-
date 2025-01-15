@@ -1,0 +1,25 @@
+1- Create an array method that calculates the average for an array of numbers.
+    ex: var arr = [1, 2, 3, 4]
+        arr.average() // should return the average
+    Note: Handle validation
+
+2- When trying to convert an object to string, the output is always '[object object]'.
+  a- Change the default output for all objects to be 'This is an object'.
+    ex: 
+        var obj = {};
+        String(obj); // Output: 'This is an object'.
+
+  b- Make String(obj) of only the following object return the content of the message while the all other objects still return 'This is an object'.
+        var obj = { message: 'This is a message' };
+        String(obj) // Output: 'This is a message'.
+
+3- You're tasked with modeling vehicles and cars in a transportation app:
+    - A Vehicle has type and speed properties.
+    - All vehicles can start and stop.
+    - A Car inherits from Vehicle and has an additional drive method.
+
+    a- Implement this using ES5 function constructors
+     - Limit the number of Vehicle instances to 50. If an attempt is made to create the 51st vehicle, throw an error with the message: 'Vehicle limit reached'.
+     - the implementation of the methods can be console.log only or you can leave them empty
+ 
+    b- Write a function that checks whether an object is an instance of Car using two different ways
