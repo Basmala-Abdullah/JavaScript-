@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20201015/pngtree-blue-cartoon-sky-background-cloud-image_418494.jpg"); /* The image used */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+}
+
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #f1d329;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+p{
+    color: rgb(37, 150, 190);
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+h1{
+    color:#f1d329;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    font-family: Verdana;
+
+
+}
+
+
+#alphabet-buttons {
+    margin-top: 20px;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 15px;   
+}
+
+
+#main-game{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%) translateX(35%);  
+    background-color: rgba(255,255,255,0.5);
+    height: 600px;
+    width: 900px;
+    border-radius: 8px;
+}
+
+#play-again{
+    transform: translateX(416%);
+}
+
+#hangman-images{
+    display: flex; 
+    justify-content: center; 
+    height: 200px;
+    
+}
+
+#lamp{
+    height: 25px;
+}

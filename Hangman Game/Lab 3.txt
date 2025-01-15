@@ -1,0 +1,34 @@
+Create a Hangman game:
+
+    Core Features
+        1.	Word Selection:
+        -	Use a predefined list of words, chosen at random for each game.
+        -	categorize the words (e.g., Animals, Movies, Countries).
+        -	let user choose a category then chose a random word from this category
+        2.	Input:
+        -	Allow users to input guesses one letter at a time.
+        -	Validate guesses to ensure they are valid letters.
+        -   Users are not allowed to guess the same letter twice
+        3.	Display Word Progress:
+        -	Show underscores _ for unguessed letters in the word (e.g., “_ _ a _ _”).
+        -	Replace underscores with correctly guessed letters.
+        4.	Lives/Attempts System:
+        -	Allow a set number of incorrect guesses (e.g., 6 chances).
+        -	Decrease lives for each incorrect guess and display remaining lives.
+        -   Allow the user to guess each character in 30 seconds (show timer after each guess)
+        -   if the user doesn't guess in the time specified the user has no lives and loses the game
+        5.	Win/Loss Condition:
+        -	Win: If all letters in the word are guessed before running out of lives.
+        -	Lose: If lives run out before the word is guessed.
+        -	Display the correct word upon game end.
+
+    Bonus Features
+        1.	Hints System:
+        -	Add an optional hint for each word (e.g., for “Elephant,” the hint might be “Large animal”).
+        -	Deduct one life if the player uses a hint.
+        2.	Difficulty Levels:
+        -	Easy: Longer word list with simpler words.
+        -	Medium: Slightly more complex words.
+        -	Hard: Short word list with difficult or obscure words.
+        3.	Responsive Hangman Drawing:
+        -	Show a visual hangman graphic (e.g., a stick figure) that updates with each incorrect guess.

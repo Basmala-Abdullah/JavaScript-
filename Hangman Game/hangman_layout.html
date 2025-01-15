@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="hangman_styles.css">
+</head>
+<body>
+    <div id = "main-game">
+        <h1>Hangman Game</h1>
+        <div id="category-selection">
+            <p>Select The Category:</p>
+            <button onclick="startGame('Fruits')">Fruits</button>
+            <button onclick="startGame('Colors')">Colors</button>
+            <button onclick="startGame('Animals')">Animals</button>
+            <button onclick="startGame('Movies')">Movies</button>
+            <button onclick="startGame('Countries')">Countries</button>
+        </div>
+    
+        <div id="game-area" style="display:none;">
+            <p>Word: <span id="word-display"></span></p>
+            <p><img id = "lamp" src="images/lamp.png"><span id="hint"></span><img id = "lamp" src="images/lamp.png"></p>
+            <p>Lives: <span id="lives"></span></p>
+            <p>Timer: <span id="timer">30</span> seconds</p>
+            <div id="alphabet-buttons">
+                <!-- Generating button for letters -->
+        </div style="hight: 100px;">
+            
+            <div id="hangman-images">
+                <img src="images/hang_only.png" id="initial" style="display:block;">
+                <img src="images/life1_lost.png" id="hangman-1" style="display:none;">
+                <img src="images/life2_lost.png" id="hangman-2" style="display:none;">
+                <img src="images/life3_lost.png" id="hangman-3" style="display:none;">
+                <img src="images/life4_lost.png" id="hangman-4" style="display:none;">
+                <img src="images/life5_lost.png" id="hangman-5" style="display:none;">
+                <img src="images/life6_lost.png" id="hangman-6" style="display:none;">
+                <img src="images/lost.png" id="hangman-7" style="display:none;">
+                <img src="images/won.png" id="hangman-8" style="display:none;">
+            </div>
+            <p id="message"></p><button id="play-again"  onclick="resetGame()">Play Again</button>
+        </div>
+
+        
+    </div>
+
+
+    
+    <script src="hangman_script.js"></script>
+</body>
+</html>
